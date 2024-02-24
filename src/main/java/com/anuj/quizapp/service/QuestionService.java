@@ -19,6 +19,8 @@ public class QuestionService {
 
     public ResponseEntity<List<Questions>>getAllQuestions() {
 
+        System.out.println("test");
+
         try {
             return new ResponseEntity<>(questionDao.findAll(), HttpStatus.OK);
         }catch (Exception e){
